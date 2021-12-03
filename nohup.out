@@ -1,0 +1,499 @@
+
+> colle-juno-front@ dev /Users/giorgio/Desktop/colle-juno-front
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /Users/giorgio/Desktop/colle-juno-front/.env.local
+(node:29386) UnhandledPromiseRejectionWarning: ReferenceError: TextEncoder is not defined
+    at /Users/giorgio/Desktop/colle-juno-front/node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-writer.browser.development.server.js:67:19
+    at Object.<anonymous> (/Users/giorgio/Desktop/colle-juno-front/node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-writer.browser.development.server.js:900:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/Users/giorgio/Desktop/colle-juno-front/node_modules/next/dist/compiled/react-server-dom-webpack/writer.browser.server.js:6:20)
+(node:29386) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:29386) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+error - Failed to load next.config.js, see more info here https://nextjs.org/docs/messages/next-config-error
+Error: Not supported
+    at Object.loadConfig [as default] (/Users/giorgio/Desktop/colle-juno-front/node_modules/next/dist/server/config.js:399:74)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! colle-juno-front@ dev: `next dev`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the colle-juno-front@ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/giorgio/.npm/_logs/2021-11-23T13_40_47_432Z-debug.log
+
+> colle-juno-front@ dev /Users/giorgio/Desktop/colle-juno-front
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /Users/giorgio/Desktop/colle-juno-front/.env.local
+event - compiled successfully in 3.6s (181 modules)
+wait  - compiling /products...
+event - compiled successfully in 355 ms (215 modules)
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+
+> colle-juno-front@ dev /Users/giorgio/Desktop/colle-juno-front
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /Users/giorgio/Desktop/colle-juno-front/.env.local
+event - compiled successfully in 2.6s (181 modules)
+wait  - compiling /products...
+event - compiled successfully in 207 ms (215 modules)
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+wait  - compiling / (client only)...
+wait  - compiling /products/[product] (client only)...
+event - compiled successfully in 252 ms (219 modules)
+wait  - compiling /products/[product]...
+event - compiled successfully in 162 ms (220 modules)
+{
+  product: {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  }
+}
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+{
+  product: {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+}
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
+{
+  product: {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  }
+}
+[
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '5kLiBPCugd1yCJL1zVeDO2',
+      type: 'Entry',
+      createdAt: '2021-11-17T18:30:43.687Z',
+      updatedAt: '2021-11-23T13:24:03.240Z',
+      environment: [Object],
+      revision: 3,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Vino',
+      description: [Object],
+      image: [Array],
+      slug: 'vino'
+    }
+  },
+  {
+    metadata: { tags: [] },
+    sys: {
+      space: [Object],
+      id: '3CxbD2R3gCm2NqFxxvMRYs',
+      type: 'Entry',
+      createdAt: '2021-11-17T16:52:15.544Z',
+      updatedAt: '2021-11-17T19:21:51.501Z',
+      environment: [Object],
+      revision: 4,
+      contentType: [Object],
+      locale: 'it'
+    },
+    fields: {
+      title: 'Olio Extravergine di Oliva',
+      description: [Object],
+      image: [Array],
+      slug: 'olio-extravergine-di-oliva'
+    }
+  }
+]
