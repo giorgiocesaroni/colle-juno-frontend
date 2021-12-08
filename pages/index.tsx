@@ -52,8 +52,8 @@ const Home: NextPage = ({ intro, products, activities, contacts }) => {
         <title>Colle Juno</title>
       </Head>
       <Header />
+
       <main className="welcome">
-        <h1>Benvenuti</h1>
         <div
           className="main_image"
           style={{
@@ -62,6 +62,7 @@ const Home: NextPage = ({ intro, products, activities, contacts }) => {
         ></div>
         <p className="introduction">{introduction}</p>
       </main>
+
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
       <Footer contacts={contacts} />

@@ -1,0 +1,21 @@
+@import url("http://fonts.cdnfonts.com/css/cooper-black");
+
+html {
+  font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.85rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+}

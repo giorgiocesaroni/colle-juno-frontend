@@ -19,6 +19,10 @@ header {
   justify-content: center;
 }
 
+header h1 {
+  color: white;
+}
+
 header .content {
   width: 100%;
   max-width: 832px;
