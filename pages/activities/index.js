@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 import Head from "next/head";
-import Header from "../../components/common/header";
-import Footer from "../../components/common/footer";
+import Header from "../../components/common/Header";
+import Footer from "../../components/common/Footer";
 import ProductList from "../../components/common/PreviewList";
 
 export async function getStaticProps() {

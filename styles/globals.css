@@ -20,4 +20,12 @@ html {
   display: grid;
   grid-template-rows: 1fr auto;
   padding-top: 48px;
+  min-height: 100vh;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+} */

@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 import Head from "next/head";
-import Header from "../../components/common/header";
-import Footer from "../../components/common/footer";
+import Header from "../../components/common/Header";
+import Footer from "../../components/common/Footer";
 
 const client = createClient({
   space: process.env.SPACE,
@@ -47,7 +47,7 @@ const Product = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className="product">
         <h1>{title}</h1>
         <div
           className="product_image"

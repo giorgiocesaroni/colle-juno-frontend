@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "../components/common/header";
-import Footer from "../components/common/footer";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 import { createClient } from "contentful";
 import ProductList from "../components/common/PreviewList";
 import { useAppContext } from "../state/state";
@@ -33,9 +33,6 @@ export async function getStaticProps() {
 }
 
 const Home = ({ intro, products, activities }) => {
-  const context = useAppContext();
-  context["string"] = "Hello";
-
   const introduction = intro.fields.introduction;
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;

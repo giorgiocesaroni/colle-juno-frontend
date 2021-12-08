@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "../components/common/header";
-import Footer from "../components/common/footer";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 import { createClient } from "contentful";
 import { useAppContext } from "../state/state";
 
@@ -31,7 +31,7 @@ const About = ({ contacts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className="product">
         <h1>Contatti</h1>
       </main>
       <Footer contacts={contacts} />
