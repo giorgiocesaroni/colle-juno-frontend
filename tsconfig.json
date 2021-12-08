@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/about.js", "pages/index.js", "pages/products/index.js", "pages/products/[product].js", "pages/activities/index.js", "pages/activities/[activity].js", "components/common/PreviewList.js", "components/common/Header.js", "components/common/Footer.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/about.js", "pages/index.js", "pages/products/index.js", "pages/products/[product].js", "pages/activities/index.js", "pages/activities/[activity].js", "components/common/PreviewList.js", "components/common/feader.js", "components/common/footer.js"],
   "exclude": ["node_modules"]
 }

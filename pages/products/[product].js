@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 import Head from "next/head";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
+import Header from "../../components/common/header";
+import Footer from "../../components/common/footer";
 
 const client = createClient({
   space: process.env.SPACE,
