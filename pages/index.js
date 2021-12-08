@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
@@ -24,8 +23,6 @@ export async function getStaticProps() {
     content_type: "activities",
   });
 
-  const contacts = await client.getEntries({ content_type: "contatti" });
-
   return {
     props: {
       intro: home.items[0],
@@ -35,7 +32,7 @@ export async function getStaticProps() {
   };
 }
 
-const Home: NextPage = ({ intro, products, activities, contacts }) => {
+const Home = ({ intro, products, activities }) => {
   const context = useAppContext();
   context["string"] = "Hello";
 

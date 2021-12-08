@@ -5,10 +5,9 @@ import "../styles/footer.css";
 import "../styles/home.css";
 import "../styles/text.css";
 import "../styles/previewlist.css";
-import type { AppProps } from "next/app";
 import { AppWrapper } from "../state/state";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <AppWrapper>
       <Component {...pageProps} />

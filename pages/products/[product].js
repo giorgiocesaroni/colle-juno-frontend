@@ -1,5 +1,3 @@
-import type { NextPage } from "next";
-import { useRouter } from "next/router";
 import { createClient } from "contentful";
 import Head from "next/head";
 import Header from "../../components/common/header";
@@ -11,10 +9,8 @@ const client = createClient({
 });
 
 export async function getStaticPaths() {
-  const res = await client.getEntries({ content_type: "activities" });
-  const paths = res.items.map(
-    (activity) => "/activities/" + activity.fields.slug
-  );
+  const res = await client.getEntries({ content_type: "product" });
+  const paths = res.items.map((product) => "/products/" + product.fields.slug);
 
   return {
     paths,
@@ -24,19 +20,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const res = await client.getEntries({
-    content_type: "activities",
-    "fields.slug": params.activity,
+    content_type: "product",
+    "fields.slug": params.product,
   });
 
   return {
     props: {
       product: res.items[0],
-      params,
     },
   };
 }
 
-const Product: NextPage = (props) => {
+const Product = (props) => {
   console.log(props);
 
   const title = props.product.fields.title;
