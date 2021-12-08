@@ -31,7 +31,6 @@ export async function getStaticProps() {
       intro: home.items[0],
       products: products.items,
       activities: activities.items,
-      contacts: contacts.items[0],
     },
   };
 }
@@ -39,8 +38,6 @@ export async function getStaticProps() {
 const Home: NextPage = ({ intro, products, activities, contacts }) => {
   const context = useAppContext();
   context["string"] = "Hello";
-
-  console.log(useAppContext());
 
   const introduction = intro.fields.introduction;
   const introImages = intro.fields.images;
@@ -65,7 +62,7 @@ const Home: NextPage = ({ intro, products, activities, contacts }) => {
 
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
-      <Footer contacts={contacts} />
+      <Footer />
     </div>
   );
 };

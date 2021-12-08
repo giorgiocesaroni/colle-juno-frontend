@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import { createClient } from "contentful";
+import { useAppContext } from "../state/state";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -20,6 +21,10 @@ export async function getStaticProps() {
 }
 
 const About: NextPage = ({ contacts }) => {
+  const context = useAppContext();
+  context["string"] = "Hello";
+  console.log(useAppContext());
+
   return (
     <div className="container">
       <Head>

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 
-const ProductList: NextPage = ({ title, products, url }) => {
+const ProductList = ({ title, products, url }) => {
   return (
     <main>
       <Link href={url ? url : ""}>
