@@ -37,7 +37,7 @@ header .rotated {
 }
 
 header svg {
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.35s ease-in-out;
   width: 1.5rem !important;
   height: 1.5rem !important;
 }
@@ -59,7 +59,7 @@ header h1 {
   min-width: 200px;
   display: flex;
   transform: translateY(0%);
-  transition: transform 0.5s ease-in-out, opacity 0.5s;
+  transition: transform 0.35s ease-in-out, opacity 0.5s;
 }
 
 .tray.hidden {

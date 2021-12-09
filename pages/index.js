@@ -51,7 +51,7 @@ const Home = ({ intro, products, activities }) => {
             backgroundImage: `url("${mainImageUrl}")`,
           }}
         ></div>
-        <p className="introduction">{introduction}</p>
+        {/* <p className="introduction">{introduction}</p> */}
       </main>
 
       <ProductList title="Prodotti" products={products} url="/products" />
