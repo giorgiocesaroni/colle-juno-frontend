@@ -29,6 +29,7 @@ export async function getStaticProps() {
       products: products.items,
       activities: activities.items,
     },
+    revalidate: 10,
   };
 }
 
