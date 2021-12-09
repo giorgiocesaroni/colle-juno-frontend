@@ -32,8 +32,10 @@ html {
   }
 
   header,
-  footer {
-    background-color: black !important;
+  footer,
+  .tray {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
   }
 
   footer {
