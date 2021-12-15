@@ -10,17 +10,21 @@ export default function Footer() {
         <Link href="/about">
           <h1>Contatti</h1>
         </Link>
-        <Link href={"/"}>
-          <a href={"/"}>
-            <p>{"/"}</p>
+        <Link href={"https://goo.gl/maps/TND36uJGYVG1aK9G8"}>
+          <a href={"https://goo.gl/maps/TND36uJGYVG1aK9G8"}>
+            <p>Via Stragonello, 10, 00075 Lanuvio RM</p>
           </a>
         </Link>
-        <Link href={"/"}>
-          <a href={"/"}>
-            <p>{"/"}</p>
+        <Link href={"https://api.whatsapp.com/send?phone=393472974863"}>
+          <a href={"https://api.whatsapp.com/send?phone=393472974863"}>
+            <p>Tel: +39 347 297 4863</p>
           </a>
         </Link>
-        <p>{"/"}</p>
+        <Link href={"mailto:collejuno.ss@gmail.com"}>
+          <a href={"mailto:collejuno.ss@gmail.com"}>
+            <p>collejuno.ss@gmail.com</p>
+          </a>
+        </Link>
       </div>
     </footer>
   );
