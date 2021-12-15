@@ -44,7 +44,7 @@ const Home = ({ intro, products, activities }) => {
       </Head>
       <Header />
 
-      <main className="welcome">
+      <main className="welcome large">
         <div
           className="main_image"
           style={{

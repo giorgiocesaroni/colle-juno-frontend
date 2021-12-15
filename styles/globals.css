@@ -23,6 +23,7 @@ html {
   padding-top: 48px;
   min-height: 100vh;
   background-color: white;
+  grid-gap: 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
