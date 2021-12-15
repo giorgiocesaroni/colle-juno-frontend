@@ -6,11 +6,8 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 0.75rem;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
-
-/* .product-list .title {
-  padding: 0 0.75rem;
-} */
 
 .product_image {
   width: 100%;
