@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import { createClient } from "contentful";
@@ -41,24 +40,24 @@ const Home = ({ intro, products, activities }) => {
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;
 
-  useEffect(() => {
-    const products = gsap.utils.toArray(".product");
+  // useEffect(() => {
+  //   const products = gsap.utils.toArray(".product");
 
-    products.forEach((p) => {
-      gsap.from(p, {
-        scrollTrigger: p,
-        // start: 200,
-        opacity: "0",
-        // delay: ".25",
-      });
-    });
-  });
+  //   products.forEach((p) => {
+  //     gsap.from(p, {
+  //       scrollTrigger: {
+  //         trigger: p,
+  //         scrub: true,
+  //       },
+  //       // start: 200,
+  //       opacity: "0",
+  //       // delay: ".25",
+  //     });
+  //   });
+  // });
 
   return (
     <div className="container">
-      <Head>
-        <title>Colle Juno</title>
-      </Head>
       <Header />
 
       <main className="welcome large">

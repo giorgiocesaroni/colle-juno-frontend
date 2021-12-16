@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +13,9 @@ export default function Header() {
 
   return (
     <header>
+      <Head>
+        <title>Colle Juno</title>
+      </Head>
       <div className={"tray" + (!isActive ? " hidden" : "")}>
         <div className="menu" onClick={toggleMenu}>
           <Link href="/products">Menu 1</Link>

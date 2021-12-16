@@ -26,10 +26,6 @@ const About = ({ contacts }) => {
 
   return (
     <div className="container">
-      <Head>
-        <title>Colle Juno</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main className="product">
         <h1>Contatti</h1>
