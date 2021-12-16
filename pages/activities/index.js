@@ -30,7 +30,7 @@ const Activities = ({ activities }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ProductList products={activities} title="Attività" />
+      <ProductList products={activities} title="Attività" url="/activities" />
       <Footer />
     </div>
   );

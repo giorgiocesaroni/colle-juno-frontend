@@ -3,7 +3,10 @@ import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import { createClient } from "contentful";
 import ProductList from "../components/common/PreviewList";
-import { useAppContext } from "../state/state";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export async function getStaticProps() {
   const client = createClient({
@@ -37,6 +40,19 @@ const Home = ({ intro, products, activities }) => {
   const introduction = intro.fields.introduction;
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;
+
+  useEffect(() => {
+    const products = gsap.utils.toArray(".product");
+
+    products.forEach((p) => {
+      gsap.from(p, {
+        scrollTrigger: p,
+        // start: 200,
+        opacity: "0",
+        // delay: ".25",
+      });
+    });
+  });
 
   return (
     <div className="container">
