@@ -33,9 +33,9 @@ header .content {
   align-items: center;
 }
 
-header .rotated {
+/* header .rotated {
   transform: rotate(-90deg);
-}
+} */
 
 header svg {
   transition: transform 0.35s ease-in-out;
@@ -65,7 +65,7 @@ header h1 {
 }
 
 .tray.hidden {
-  transform: calc(translateY(-100%) - 1px);
+  transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
 }
