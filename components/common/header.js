@@ -15,7 +15,7 @@ export default function Header() {
     <header>
       <Head>
         <title>Colle Juno</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
         <meta name="description" content="Il sito di Colle Juno" />
