@@ -40,7 +40,7 @@ const Product = (props) => {
   const imageUrl = props.product.fields.images[0].fields.file.url;
 
   return (
-    <div className="container">
+    <>
       <main className="product">
         <h1>{title}</h1>
         <div
@@ -51,7 +51,7 @@ const Product = (props) => {
         ></div>
         <p>{description}</p>
       </main>
-    </div>
+    </>
   );
 };
 

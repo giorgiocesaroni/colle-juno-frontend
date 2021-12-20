@@ -25,9 +25,9 @@ const Products = ({ products, contacts }) => {
   console.log(products);
 
   return (
-    <div className="container">
+    <>
       <ProductList title="Prodotti" products={products} url="/products" />
-    </div>
+    </>
   );
 };
 

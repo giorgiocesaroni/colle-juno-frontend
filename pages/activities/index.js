@@ -17,10 +17,9 @@ export async function getStaticProps() {
 }
 
 const Activities = ({ activities }) => {
-  console.log(activities);
-
   return (
     <ProductList products={activities} title="Attività" url="/activities" />
   );
 };
+
 export default Activities;

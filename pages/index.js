@@ -38,7 +38,7 @@ const Home = ({ intro, products, activities }) => {
   const mainImageUrl = introImages[0].fields.file.url;
 
   return (
-    <div className="container">
+    <>
       <main className="welcome large">
         <div
           className="main_image"
@@ -49,7 +49,7 @@ const Home = ({ intro, products, activities }) => {
       </main>
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
-    </div>
+    </>
   );
 };
 

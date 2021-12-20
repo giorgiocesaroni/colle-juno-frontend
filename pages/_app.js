@@ -7,7 +7,6 @@ import "../styles/text.css";
 import "../styles/previewlist.css";
 import "../styles/product.css";
 import "../styles/single-product-checkout.css";
-import { AppWrapper } from "../state/state";
 import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 
