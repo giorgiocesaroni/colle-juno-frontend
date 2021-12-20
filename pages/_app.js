@@ -11,10 +11,12 @@ import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 
 function MyApp({ Component, pageProps }) {
-  return (
+  const [locked, setLocked] = useState(false);
+  
+    return (
     <div className="container">
-      <Header />
-      <Component {...pageProps} />
+      <Header setLocked={locked, setLocked} />
+      <Component className={locked ? "locked" : ""} {...pageProps} />
       <Footer />
     </div>
   );

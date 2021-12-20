@@ -4,11 +4,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({ locked, setLocked }) {
   const [isActive, setActive] = useState(false);
 
   function toggleMenu() {
     setActive(!isActive);
+    setLocked(!locked);
   }
 
   return (
