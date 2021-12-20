@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
-import Head from "next/head";
 import Header from "../../components/common/header";
 import Footer from "../../components/common/footer";
+import SingleProductCheckout from "../../components/common/SingleProductCheckout";
 
 const client = createClient({
   space: process.env.SPACE,
@@ -32,12 +32,12 @@ export async function getStaticProps({ params }) {
 }
 
 const Product = (props) => {
-  console.log(props);
-
   const title = props.product.fields.title;
   const description =
     props.product.fields.description.content[0].content[0].value;
   const imageUrl = props.product.fields.images[0].fields.file.url;
+  const price = props.product.fields.price;
+  const stripePriceId = props.product.fields.stripePriceId;
 
   return (
     <div className="container">
@@ -51,6 +51,9 @@ const Product = (props) => {
           }}
         ></div>
         <p>{description}</p>
+
+        <SingleProductCheckout price={price} stripePriceId={stripePriceId} />
+
       </main>
       <Footer />
     </div>

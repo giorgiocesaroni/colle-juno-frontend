@@ -40,22 +40,6 @@ const Home = ({ intro, products, activities }) => {
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;
 
-  // useEffect(() => {
-  //   const products = gsap.utils.toArray(".product");
-
-  //   products.forEach((p) => {
-  //     gsap.from(p, {
-  //       scrollTrigger: {
-  //         trigger: p,
-  //         scrub: true,
-  //       },
-  //       // start: 200,
-  //       opacity: "0",
-  //       // delay: ".25",
-  //     });
-  //   });
-  // });
-
   return (
     <div className="container">
       <Header />

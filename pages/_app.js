@@ -6,6 +6,7 @@ import "../styles/home.css";
 import "../styles/text.css";
 import "../styles/previewlist.css";
 import "../styles/product.css";
+import "../styles/single-product-checkout.css";
 import { AppWrapper } from "../state/state";
 
 function MyApp({ Component, pageProps }) {
