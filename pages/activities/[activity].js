@@ -1,7 +1,4 @@
 import { createClient } from "contentful";
-import Head from "next/head";
-import Header from "../../components/common/header";
-import Footer from "../../components/common/footer";
 
 const client = createClient({
   space: process.env.SPACE,
@@ -44,7 +41,6 @@ const Product = (props) => {
 
   return (
     <div className="container">
-      <Header />
       <main className="product">
         <h1>{title}</h1>
         <div
@@ -55,7 +51,6 @@ const Product = (props) => {
         ></div>
         <p>{description}</p>
       </main>
-      <Footer />
     </div>
   );
 };

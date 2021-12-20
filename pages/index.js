@@ -1,8 +1,5 @@
-import Header from "../components/common/header";
-import Footer from "../components/common/footer";
 import { createClient } from "contentful";
 import ProductList from "../components/common/PreviewList";
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -42,8 +39,6 @@ const Home = ({ intro, products, activities }) => {
 
   return (
     <div className="container">
-      <Header />
-
       <main className="welcome large">
         <div
           className="main_image"
@@ -51,12 +46,9 @@ const Home = ({ intro, products, activities }) => {
             backgroundImage: `url("${mainImageUrl}")`,
           }}
         ></div>
-        {/* <p className="introduction">{introduction}</p> */}
       </main>
-
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
-      <Footer />
     </div>
   );
 };

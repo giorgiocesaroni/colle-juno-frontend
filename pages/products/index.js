@@ -26,9 +26,7 @@ const Products = ({ products, contacts }) => {
 
   return (
     <div className="container">
-      <Header />
       <ProductList title="Prodotti" products={products} url="/products" />
-      <Footer contacts={contacts} />
     </div>
   );
 };

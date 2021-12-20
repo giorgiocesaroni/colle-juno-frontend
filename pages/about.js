@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Header from "../components/common/header";
-import Footer from "../components/common/footer";
 import { createClient } from "contentful";
 import { useAppContext } from "../state/state";
 
@@ -26,11 +23,9 @@ const About = ({ contacts }) => {
 
   return (
     <div className="container">
-      <Header />
       <main className="product">
         <h1>Contatti</h1>
       </main>
-      <Footer contacts={contacts} />
     </div>
   );
 };

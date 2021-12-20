@@ -1,7 +1,4 @@
 import { createClient } from "contentful";
-import Head from "next/head";
-import Header from "../../components/common/header";
-import Footer from "../../components/common/footer";
 import ProductList from "../../components/common/PreviewList";
 
 export async function getStaticProps() {
@@ -23,11 +20,7 @@ const Activities = ({ activities }) => {
   console.log(activities);
 
   return (
-    <div className="container">
-      <Header />
-      <ProductList products={activities} title="Attività" url="/activities" />
-      <Footer />
-    </div>
+    <ProductList products={activities} title="Attività" url="/activities" />
   );
 };
 export default Activities;

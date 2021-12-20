@@ -40,23 +40,19 @@ const Product = (props) => {
   const stripePriceId = props.product.fields.stripePriceId;
 
   return (
-    <div className="container">
-      <Header />
-      <main className="product">
-        <h1>{title}</h1>
-        <div
-          className="product_image"
-          style={{
-            backgroundImage: `url("${imageUrl}")`,
-          }}
-        ></div>
-        <p>{description}</p>
+    <main className="product">
+      <h1>{title}</h1>
+      <div
+        className="product_image"
+        style={{
+          backgroundImage: `url("${imageUrl}")`,
+        }}
+      ></div>
+      <p>{description}</p>
 
-        <SingleProductCheckout price={price} stripePriceId={stripePriceId} />
+      <SingleProductCheckout price={price} stripePriceId={stripePriceId} />
 
-      </main>
-      <Footer />
-    </div>
+    </main>
   );
 };
 
