@@ -1,4 +1,5 @@
 import { createClient } from "contentful";
+import Image from "../../components/common/image";
 
 const client = createClient({
   space: process.env.SPACE,
@@ -43,12 +44,7 @@ const Product = (props) => {
     <>
       <main className="product">
         <h1>{title}</h1>
-        <div
-          className="product_image"
-          style={{
-            backgroundImage: `url("${imageUrl}")`,
-          }}
-        ></div>
+        <Image url={imageUrl} className="product_image" />
         <p>{description}</p>
       </main>
     </>

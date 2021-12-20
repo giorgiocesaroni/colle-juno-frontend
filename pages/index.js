@@ -1,8 +1,6 @@
 import { createClient } from "contentful";
 import ProductList from "../components/common/PreviewList";
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import Image from '../components/common/image';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -36,16 +34,12 @@ const Home = ({ intro, products, activities }) => {
   const introduction = intro.fields.introduction;
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;
+  console.log(mainImageUrl);
 
   return (
     <>
       <main className="welcome large">
-        <div
-          className="main_image"
-          style={{
-            backgroundImage: `url("${mainImageUrl}")`,
-          }}
-        ></div>
+        <Image url={mainImageUrl} />
       </main>
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
