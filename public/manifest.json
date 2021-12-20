@@ -1,7 +1,7 @@
 {
   "theme_color": "#0fb521",
   "background_color": "#0fb521",
-  "display": "browser",
+  "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
   "name": "Colle Juno",
