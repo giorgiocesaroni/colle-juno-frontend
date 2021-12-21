@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div className={"container" + (isTrayOpen ? " locked" : "")}>
       <Header isTrayOpen={isTrayOpen} setTrayOpen={setTrayOpen} />
-      <main>{children}</main>
+      {children}
       <Footer />
     </div>
   )

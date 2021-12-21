@@ -1,5 +1,5 @@
 import { createClient } from "contentful";
-import SingleProductCheckout from "../../components/SingleProductCheckout";
+import AddToCart from "../../components/AddToCart";
 import Image from '../../components/Image';
 
 const client = createClient({
@@ -45,7 +45,7 @@ const Product = (props) => {
       <p>{description}</p>
 
       {/* If price exists... */}
-      {price ? <SingleProductCheckout price={price} stripePriceId={stripePriceId} /> : ''}
+      {price ? <AddToCart price={price} stripePriceId={stripePriceId} /> : ''}
 
     </main>
   );

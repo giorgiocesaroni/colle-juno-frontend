@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header({ isTrayOpen, setTrayOpen }) {
-  
+
   function toggleMenu() {
     setTrayOpen(!isTrayOpen);
   }
@@ -24,11 +24,11 @@ export default function Header({ isTrayOpen, setTrayOpen }) {
       </Head>
       <div className={"tray" + (!isTrayOpen ? " hidden" : "")}>
         <div className="menu" onClick={toggleMenu}>
+          <Link href="/cart">Carrello</Link>
           <Link href="/products">Menu 1</Link>
           <Link href="/products">Menu 2</Link>
           <Link href="/products">Menu 3</Link>
           <Link href="/products">Menu 4</Link>
-          <Link href="/products">Menu 5</Link>
         </div>
       </div>
       <div className="content">
