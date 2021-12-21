@@ -22,7 +22,7 @@ export default function Cart(props) {
     <main className="cart">
       <h1>Carrello ({totalUniqueItems})</h1>
       {items.map((item) => (
-        <section class='product' key={item.id}>
+        <section className='product' key={item.id}>
           <h2>{item.name}</h2>
           <section className="change-quantity">
             <input value={item.quantity}></input>
