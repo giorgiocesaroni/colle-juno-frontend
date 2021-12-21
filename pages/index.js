@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
-import ProductList from "../components/common/PreviewList";
-import Image from '../components/common/image';
+import ProductList from "../components/ProductList";
+import Image from '../components/Image';
 
 export async function getStaticProps() {
   const client = createClient({

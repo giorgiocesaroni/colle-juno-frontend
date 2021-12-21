@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "../common/image";
+import Image from "./Image";
 
 const ProductList = ({ title, products, url }) => {
   return (

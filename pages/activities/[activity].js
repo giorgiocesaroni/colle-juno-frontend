@@ -1,5 +1,5 @@
 import { createClient } from "contentful";
-import Image from "../../components/common/image";
+import Image from "../../components/Image";
 
 const client = createClient({
   space: process.env.SPACE,

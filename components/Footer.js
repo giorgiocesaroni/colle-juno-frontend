@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useAppContext } from "../../state/state";
+import { useAppContext } from "../state/state";
 
 export default function Footer() {
   const context = useAppContext();

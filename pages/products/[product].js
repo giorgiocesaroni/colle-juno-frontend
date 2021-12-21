@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
-import SingleProductCheckout from "../../components/common/SingleProductCheckout";
-import Image from '../../components/common/image';
+import SingleProductCheckout from "../../components/SingleProductCheckout";
+import Image from '../../components/Image';
 
 const client = createClient({
   space: process.env.SPACE,

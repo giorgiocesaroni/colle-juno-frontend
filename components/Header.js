@@ -2,14 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
-export default function Header({ locked, setLocked }) {
-  const [isActive, setActive] = useState(false);
-
+export default function Header({ isTrayOpen, setTrayOpen }) {
+  
   function toggleMenu() {
-    setActive(!isActive);
-    setLocked(!locked);
+    setTrayOpen(!isTrayOpen);
   }
 
   return (
@@ -25,7 +22,7 @@ export default function Header({ locked, setLocked }) {
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="apple-touch-icon" href="apple-icon.png"></link>
       </Head>
-      <div className={"tray" + (!isActive ? " hidden" : "")}>
+      <div className={"tray" + (!isTrayOpen ? " hidden" : "")}>
         <div className="menu" onClick={toggleMenu}>
           <Link href="/products">Menu 1</Link>
           <Link href="/products">Menu 2</Link>
@@ -39,7 +36,7 @@ export default function Header({ locked, setLocked }) {
           <h1>Colle Juno</h1>
         </Link>
         <FontAwesomeIcon
-          className={isActive ? "rotated" : undefined}
+          className={isTrayOpen ? "rotated" : undefined}
           onClick={toggleMenu}
           icon={faBars}
         />

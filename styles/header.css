@@ -32,8 +32,8 @@ header .content {
   justify-content: space-between;
   align-items: center;
 }
-
-/* header .rotated {
+/* 
+header .rotated {
   transform: rotate(-90deg);
 } */
 
@@ -49,9 +49,9 @@ header h1 {
 }
 
 .tray {
+  position: absolute;
   z-index: -1;
   background: green;
-  position: fixed;
   top: 0px;
   left: 0;
   width: 100%;
