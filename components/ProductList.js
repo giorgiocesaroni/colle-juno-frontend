@@ -10,7 +10,7 @@ const ProductList = ({ title, products, url }) => {
       <div className="product-list">
         {products.map((product) => (
           <Link href={`${url}/${product.fields.slug}`} key={product.sys.id}>
-            <div className="product">
+            <div>
               <h2 className="title">{product.fields.title}</h2>
               <Image className='product_image' url={product.fields.images[0].fields.file.url} />
               <p className="description">

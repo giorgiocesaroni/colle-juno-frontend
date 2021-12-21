@@ -1,5 +1,5 @@
 import { createClient } from "contentful";
-import AddToCart from "../../components/AddToCart";
+import Product from "../../components/Product";
 import Image from '../../components/Image';
 
 const client = createClient({
@@ -30,25 +30,24 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const Product = (props) => {
-  const title = props.product.fields.title;
-  const description =
-    props.product.fields.description.content[0].content[0].value;
-  const imageUrl = props.product.fields.images[0].fields.file.url;
-  const price = props.product.fields.price;
-  const stripePriceId = props.product.fields.stripePriceId;
+const ProductPage = ({ product }) => {
+  const title = product.fields.title;
+  const description = product.fields.description.content[0].content[0].value;
+  const imageUrl = product.fields.images[0].fields.file.url;
+  const price = product.fields.price;
+  const stripePriceId = product.fields.stripePriceId;
 
   return (
-    <main className="product">
+    <main className="product-page">
       <h1>{title}</h1>
       <Image url={imageUrl} className="product_image" />
       <p>{description}</p>
 
       {/* If price exists... */}
-      {price ? <AddToCart price={price} stripePriceId={stripePriceId} /> : ''}
+      {price ? <Product price={price} stripePriceId={stripePriceId} /> : ''}
 
     </main>
   );
 };
 
-export default Product;
+export default ProductPage;

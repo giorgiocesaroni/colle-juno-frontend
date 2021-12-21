@@ -16,6 +16,17 @@ html {
   background-color: green;
 }
 
+/* Button reset */
+button, input {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .container {
   display: grid;
   grid-template-rows: 1fr auto;

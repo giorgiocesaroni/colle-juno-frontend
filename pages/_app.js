@@ -4,15 +4,20 @@ import "../styles/header.css";
 import "../styles/footer.css";
 import "../styles/home.css";
 import "../styles/text.css";
-import "../styles/previewlist.css";
+import "../styles/product-list.css";
+import "../styles/product-page.css";
 import "../styles/product.css";
-import "../styles/single-product-checkout.css";
+import "../styles/cart.css";
 import Layout from '../components/Layout';
+import { CartProvider } from "react-use-cart";
+
 
 export default function MyApp({ Component, pageProps }) {
   return <>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <CartProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </CartProvider>
   </>
 }

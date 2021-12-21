@@ -41,13 +41,12 @@ const Product = (props) => {
   const imageUrl = props.product.fields.images[0].fields.file.url;
 
   return (
-    <>
-      <main className="product">
-        <h1>{title}</h1>
-        <Image url={imageUrl} className="product_image" />
-        <p>{description}</p>
-      </main>
-    </>
+    <main className="product-page">
+      <h1>{title}</h1>
+      <Image url={imageUrl} className="product_image" />
+      <p>{description}</p>
+    </main>
+
   );
 };
 

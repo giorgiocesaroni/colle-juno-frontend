@@ -1,10 +1,45 @@
-.product p {
-  padding: 0.75rem;
-}
-
 .product {
-  padding: 0.75rem;
-  position: relative;
+  border-radius: 5px;
+  background: #eee;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-gap: 1rem;
 }
 
+.product .price {
+  font-size: 2rem;
+}
 
+.product .add-to-cart {
+  border: none;
+  background: green;
+  color: white;
+  font-family: inherit;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.change-quantity {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.change-quantity button {
+  background: #ccc;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  outline: none;
+  text-align: center;
+  outline: none;
+}
+
+.change-quantity input {
+  background: white;
+  border: none;
+  width: 1.5rem;
+  text-align: center;
+}

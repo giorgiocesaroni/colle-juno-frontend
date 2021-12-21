@@ -18,7 +18,9 @@ export async function getStaticProps() {
 
 const Activities = ({ activities }) => {
   return (
-    <ProductList products={activities} title="Attività" url="/activities" />
+    <>
+      <ProductList products={activities} title="Attività" url="/activities" />
+    </>
   );
 };
 

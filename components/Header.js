@@ -10,7 +10,7 @@ export default function Header({ isTrayOpen, setTrayOpen }) {
   }
 
   return (
-    <header>
+    <header onClick={toggleMenu}>
       <Head>
         <title>Colle Juno</title>
         <meta charSet="utf-8" />
@@ -23,12 +23,10 @@ export default function Header({ isTrayOpen, setTrayOpen }) {
         <link rel="apple-touch-icon" href="apple-icon.png"></link>
       </Head>
       <div className={"tray" + (!isTrayOpen ? " hidden" : "")}>
-        <div className="menu" onClick={toggleMenu}>
+        <div className="menu">
+          <Link href="/products">Prodotti</Link>
+          <Link href="/activities">Attività</Link>
           <Link href="/cart">Carrello</Link>
-          <Link href="/products">Menu 1</Link>
-          <Link href="/products">Menu 2</Link>
-          <Link href="/products">Menu 3</Link>
-          <Link href="/products">Menu 4</Link>
         </div>
       </div>
       <div className="content">
