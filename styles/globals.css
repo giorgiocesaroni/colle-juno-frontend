@@ -27,18 +27,26 @@ button, input {
 	outline: inherit;
 }
 
+body {
+  height: 100%;
+}
+
 .container {
   display: grid;
   grid-template-rows: 1fr auto;
-  padding-top: 48px;
   background-color: white;
   grid-gap: 3rem;
-  min-height: 100vh;
+  padding-top: 48px;
 }
 
-.locked {
-  height: 100vh;
+.container.locked {
+  height: 100%;
   overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 0;
 }
 
 /* Relocate dark mode */

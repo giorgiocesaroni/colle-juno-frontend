@@ -39,7 +39,7 @@ const Home = ({ intro, products, activities }) => {
   return (
     <>
       <main className="welcome large">
-        <Image url={mainImageUrl} />
+        <Image className="main-image" url={mainImageUrl} />
       </main>
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />

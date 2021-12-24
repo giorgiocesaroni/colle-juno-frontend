@@ -1,10 +1,14 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  color: white;
+}
+
 header {
   color: white;
   background-color: green;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -23,7 +27,7 @@ header h1 {
   color: white;
 }
 
-header .content {
+.header-content {
   padding: 0.25rem 0.75rem;
   width: 100%;
   max-width: 864px;
@@ -32,10 +36,10 @@ header .content {
   justify-content: space-between;
   align-items: center;
 }
-/* 
+
 header .rotated {
   transform: rotate(-90deg);
-} */
+}
 
 header svg {
   transition: transform 0.35s ease-in-out;
@@ -52,21 +56,17 @@ header h1 {
   position: absolute;
   z-index: -1;
   background: green;
-  top: 0px;
-  left: 0;
   width: 100%;
-  min-height: 100vh;
-  padding-top: 48px;
   padding-bottom: 3rem;
   min-width: 200px;
   display: flex;
   transform: translateY(0%);
-  transition: transform 0.35s ease-in-out, opacity 0.5s;
+  transition: transform 0.35s ease-in-out;
+  min-height: 100vh;
 }
 
 .tray.hidden {
   transform: translateY(-100%);
-  opacity: 0;
   pointer-events: none;
 }
 
