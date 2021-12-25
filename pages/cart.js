@@ -19,7 +19,7 @@ export default function Cart(props) {
   );
 
   return (
-    <main className="cart">
+    <section className="cart">
       <h1>Carrello ({totalUniqueItems})</h1>
       {items.map((item) => (
         <section className='product' key={item.id}>
@@ -33,6 +33,6 @@ export default function Cart(props) {
           <p className="price">{item.price}€</p>
         </section>
       ))}
-    </main>
+    </section>
   );
 }

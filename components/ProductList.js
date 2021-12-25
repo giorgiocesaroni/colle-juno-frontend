@@ -3,7 +3,7 @@ import Image from "./Image";
 
 const ProductList = ({ title, products, url }) => {
   return (
-    <main>
+    <section>
       <Link href={url ? url : ""}>
         <h1 className="list-title">{title}</h1>
       </Link>
@@ -20,7 +20,7 @@ const ProductList = ({ title, products, url }) => {
           </Link>
         ))}
       </div>
-    </main>
+    </section>
   );
 };
 

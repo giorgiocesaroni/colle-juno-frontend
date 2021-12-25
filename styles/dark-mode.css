@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: dark) {
+  
+  /* body {
+    background-color: black;
+    color: white;
+  } */
+
+  header,
+  footer,
+  .tray {
+    background-color: rgba(0, 0, 0, 1) !important;
+    /* backdrop-filter: blur(10px) !important; */
+  }
+
+  footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  header,
+  .list-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+  }
+
+  .list-title {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+
+  .container {
+    background: black;
+  }
+}

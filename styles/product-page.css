@@ -6,6 +6,9 @@
 
 .product-page > p {
   padding: 0.75rem;
+  max-width: 50ch;
+  margin: 0 auto;
+  text-align: center;
 }
 
 

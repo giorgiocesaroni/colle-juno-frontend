@@ -38,9 +38,9 @@ const Home = ({ intro, products, activities }) => {
 
   return (
     <>
-      <main className="welcome large">
+      <section className="welcome large">
         <Image className="main-image" url={mainImageUrl} />
-      </main>
+      </section>
       <ProductList title="Prodotti" products={products} url="/products" />
       <ProductList title="Attività" products={activities} url="/activities" />
     </>

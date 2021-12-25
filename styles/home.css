@@ -6,14 +6,11 @@
 
 .welcome {
   height: calc(100vh - 48px);
-  /* margin-bottom: 2rem; */
+  margin-bottom: 3rem;
 }
 
 .main-image {
   height: 100%;
-  max-height: calc(100vh - 48px);
-  background-size: cover;
-  background-position: center;
 }
 
 .large {

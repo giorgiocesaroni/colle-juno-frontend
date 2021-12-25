@@ -1,19 +1,18 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   min-width: 320px;
   -webkit-text-size-adjust: 100%;
-  background-color: green;
 }
 
 /* Button reset */
@@ -27,21 +26,11 @@ button, input {
 	outline: inherit;
 }
 
-body {
-  height: 100%;
-}
-
 .container {
-  display: grid;
   grid-template-rows: 1fr auto;
   background-color: white;
-  grid-gap: 3rem;
   padding-top: 48px;
-}
-
-.container.locked {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .image-wrapper {
@@ -49,35 +38,8 @@ body {
   z-index: 0;
 }
 
-/* Relocate dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-
-  header,
-  footer,
-  .tray {
-    background-color: rgba(0, 0, 0, 1) !important;
-    /* backdrop-filter: blur(10px) !important; */
-  }
-
-  footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-  }
-
-  header,
-  .list-title {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
-  }
-
-  .list-title {
-    background-color: rgba(0, 0, 0, 0.75) !important;
-  }
-
-  .container {
-    background: black;
-  }
+main section {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }

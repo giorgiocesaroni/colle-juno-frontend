@@ -38,7 +38,7 @@ const ProductPage = ({ product }) => {
   const stripePriceId = product.fields.stripePriceId;
 
   return (
-    <main className="product-page">
+    <section className="product-page">
       <h1>{title}</h1>
       <Image url={imageUrl} className="product_image" />
       <p>{description}</p>
@@ -46,7 +46,7 @@ const ProductPage = ({ product }) => {
       {/* If price exists... */}
       {price ? <Product price={price} stripePriceId={stripePriceId} /> : ''}
 
-    </main>
+    </section>
   );
 };
 
