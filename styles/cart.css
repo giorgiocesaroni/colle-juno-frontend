@@ -1,4 +1,15 @@
 .cart {
-  padding: .75rem;
+  padding: 0.75rem;
   display: grid;
+}
+
+.cart.centered {
+  height: 100%;
+}
+
+.cart.centered div {
+  font-size: 2rem;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
 }
