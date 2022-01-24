@@ -24,15 +24,15 @@ export default function Product({ price, stripePriceId }) {
         open={open}
         autoHideDuration={3000}
         onClose={() => setOpen(false)}
+        sx={{
+          marginBottom: "2rem",
+        }}
       >
         <MuiAlert severity="success">
-          Aggiunto al{" "}
-          <Link href="/cart">
-            carrello
-          </Link>
-          .
+          Aggiunto al <Link href="/cart">carrello</Link>.
         </MuiAlert>
       </Snackbar>
+
       <section className="product">
         <p className="price">{price + "€"}</p>
         <p className="quantity">Quantità</p>
