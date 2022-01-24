@@ -29,7 +29,11 @@ export default function Product({ price, stripePriceId }) {
         }}
       >
         <MuiAlert severity="success">
-          Aggiunto al <Link href="/cart">carrello</Link>.
+          Aggiunto al{" "}
+          <Link href="/cart">
+            <a>carrello</a>
+          </Link>
+          .
         </MuiAlert>
       </Snackbar>
 
@@ -48,7 +52,8 @@ export default function Product({ price, stripePriceId }) {
         <button
           className="add-to-cart"
           onClick={(e) => {
-            setOpen(true), addToCart(e);
+            setOpen(true);
+            !open && addToCart(e);
           }}
         >
           Aggiungi al carrello
