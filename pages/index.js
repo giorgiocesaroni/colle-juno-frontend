@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 import ProductList from "../components/ProductList";
-import Image from '../components/Image';
+import Image from "../components/Image";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -34,7 +34,6 @@ const Home = ({ intro, products, activities }) => {
   const introduction = intro.fields.introduction;
   const introImages = intro.fields.images;
   const mainImageUrl = introImages[0].fields.file.url;
-  console.log(mainImageUrl);
 
   return (
     <>

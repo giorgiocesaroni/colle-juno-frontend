@@ -27,6 +27,7 @@ button, input {
 }
 
 .container {
+  display: grid;
   grid-template-rows: 1fr auto;
   background-color: white;
   padding-top: 48px;
