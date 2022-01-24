@@ -28,7 +28,7 @@ export default function Product({ price, stripePriceId }) {
         <MuiAlert severity="success">
           Aggiunto al{" "}
           <Link href="/cart">
-            <a href="/cart">carrello</a>
+            carrello
           </Link>
           .
         </MuiAlert>
