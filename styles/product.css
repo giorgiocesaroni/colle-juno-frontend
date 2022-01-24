@@ -7,6 +7,7 @@
   justify-items: center;
   grid-gap: 1rem;
   max-width: 320px;
+  width: auto;
 }
 
 .product .price {
@@ -18,14 +19,16 @@
   background: green;
   color: white;
   font-family: inherit;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 
 .change-quantity {
+  width: auto;
   display: flex;
   border-radius: 5px;
   overflow: hidden;
+  /* border: 1px solid #000; */
 }
 
 .change-quantity button {
