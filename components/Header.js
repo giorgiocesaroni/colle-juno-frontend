@@ -25,7 +25,7 @@ export default function Header({ isTrayOpen, setTrayOpen }) {
           <link rel="shortcut icon" href="favicon.ico" />
           <link rel="apple-touch-icon" href="apple-icon.png"></link>
           <link
-            href="http://fonts.cdnfonts.com/css/athelas"
+            href="https://fonts.cdnfonts.com/css/athelas"
             rel="stylesheet"
           ></link>
         </Head>
